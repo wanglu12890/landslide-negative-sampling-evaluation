@@ -4,7 +4,7 @@
 
 **Internal Discrimination Does Not Predict Ranking Utility: Negative-Sample Construction for Budget-Constrained Spatial Prioritization** — Lu Wang and Yuzhang Qin; ICAIDM 2026 revision, v4. Acceptance status, venue metadata and DOI are not asserted.
 
-This is an offline release candidate. No repository has been created or uploaded. The authors must approve ownership, the code license and the derivative-data release before publication. See LICENSE and docs/PUBLIC_RELEASE_AUDIT.md.
+This is an offline release candidate. The authors must approve ownership, the code license and the derivative-data release before publication. See LICENSE and docs/PUBLIC_RELEASE_AUDIT.md.
 
 ## Overview
 
