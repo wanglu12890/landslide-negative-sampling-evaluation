@@ -1,0 +1,13 @@
+Factor,Data_source,Acquisition_year_period,Original_resolution,Processing_method,Final_resolution,CRS
+Aspect,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,Existing integer category codes; no RF one-hot encoding,12.5 m,EPSG:32649
+Curvature,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: -6,-4,-2,-1,1,2,4,6",12.5 m,EPSG:32649
+DTF,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 500,1000,1500,2000,3000,4000",12.5 m,EPSG:32649
+DTR,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 600,1200,2000,3500,4500",12.5 m,EPSG:32649
+DTW,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 1000,2500,4000,5500,8000",12.5 m,EPSG:32649
+Elevation,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 200,400,600,800,1000,1200,1400",12.5 m,EPSG:32649
+Landuse,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,Existing integer category codes; no RF one-hot encoding,12.5 m,EPSG:32649
+Lithology,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,Existing integer category codes; no RF one-hot encoding,12.5 m,EPSG:32649
+NDVI,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 0.1,0.31,0.46,0.54",12.5 m,EPSG:32649
+Relief,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 6,12,18,25,35",12.5 m,EPSG:32649
+Slope,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 10,20,30,40,50,60",12.5 m,EPSG:32649
+TWI,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,TO BE VERIFIED BY AUTHORS,"Raw continuous raster values; no RF scaling; IV fixed breaks: 4.74,7.46,12.78,17.87",12.5 m,EPSG:32649

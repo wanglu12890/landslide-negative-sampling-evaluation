@@ -1,0 +1,10 @@
+{
+  "python_syntax": "PASS",
+  "source_module_imports": "PASS",
+  "all_18_run_ids_and_configs": "PASS",
+  "source_and_result_file_hashes": "PASS",
+  "published_result_integrity": "PASS",
+  "all_cli_help": "PASS",
+  "synthetic_ties_exact_budget_lift_complete_auc": "PASS",
+  "paired_cluster_variable_denominator": "PASS"
+}

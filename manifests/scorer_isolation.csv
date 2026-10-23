@@ -1,0 +1,19 @@
+run_key,fit_positive_count,test_positive_count,fit_test_id_overlap,same_fit_positive_ids_as_final_model,evidence
+NS1_seed42,560,240,0,True,direct RF fitting subset
+NS1_seed43,560,240,0,True,direct RF fitting subset
+NS1_seed44,560,240,0,True,direct RF fitting subset
+NS2_seed42,560,240,0,True,saved training-only IV positive table
+NS2_seed43,560,240,0,True,saved training-only IV positive table
+NS2_seed44,560,240,0,True,saved training-only IV positive table
+NS3_seed42,560,240,0,True,baseline RF training table
+NS3_seed43,560,240,0,True,baseline RF training table
+NS3_seed44,560,240,0,True,baseline RF training table
+H100_seed42,560,240,0,True,baseline RF training table
+H100_seed43,560,240,0,True,baseline RF training table
+H100_seed44,560,240,0,True,baseline RF training table
+Q60_seed42,560,240,0,True,baseline RF training table
+Q60_seed43,560,240,0,True,baseline RF training table
+Q60_seed44,560,240,0,True,baseline RF training table
+H00_seed42,560,240,0,True,baseline RF training table
+Q50_seed42,560,240,0,True,baseline RF training table
+Q80_seed42,560,240,0,True,baseline RF training table

@@ -1,0 +1,36 @@
+{
+  "scales_m": [
+    1000,
+    2000,
+    5000
+  ],
+  "iterations": 10000,
+  "master_seed": 202610230,
+  "seed_rule": "master + scale_m*10 + training_seed",
+  "rng": "numpy.default_rng PCG64",
+  "crs": "EPSG:32649",
+  "origin_xy_m": [
+    710000.0,
+    2825000.0
+  ],
+  "grid": "floor((x-origin_x)/scale), floor((y-origin_y)/scale); lower closed upper open",
+  "sampling_population": "occupied blocks only, conditional on event-bearing blocks; empty blocks not sampled",
+  "estimator": "sum paired event differences in sampled blocks / sum event counts in sampled blocks; repeated blocks repeat all events",
+  "interval": "marginal 95% percentile; quantile linear; no multiplicity adjustment",
+  "scale_rationale": "predeclared 1/2/5 km grids examine increasing clustering scales; not estimated decorrelation lengths or validated optimal blocks",
+  "versions": {
+    "python": "3.12.0",
+    "numpy": "2.2.2",
+    "pandas": "2.2.3",
+    "rasterio": "1.4.3"
+  },
+  "input_sha256": {
+    "seed42_event_paired_differences.csv": "0e6ce42e63f1f34e5c9f86630424caaf5ad7c800a1b5f98ab9dcfb1c2fedfd88",
+    "seed43_event_paired_differences.csv": "1eaf4aa4b15b5bc51243a130ad38a57a8a4d4be626af9a4204b083fc53146318",
+    "seed44_event_paired_differences.csv": "1a2c5733381c9219ce65cd9ce6bec0450ea4f59e5ad5d1473a1cc6d4a3691be8"
+  },
+  "domain_sha256": "306bfd321735e1936ebec131901b29b9f9472dc6c8f6a7f0eb8ca24302457339",
+  "events_sha256": "cad2c537f6bcc7e816d3873bafff1662f541248cfb1c332d71e271513fa4fa75",
+  "script_sha256": "824245d10ce1e6bf8063c192985e037c4a91a40c16735ab84480f251f3679c0c",
+  "elapsed_seconds": 2.113051652908325
+}

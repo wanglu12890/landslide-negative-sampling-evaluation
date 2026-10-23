@@ -1,0 +1,16 @@
+{
+  "v4_seed42_numeric_rows": "8/8 exact at manuscript precision",
+  "v4_interval_rows": "24/24 exact at manuscript precision",
+  "scorer_id_isolation": "18/18 pass",
+  "algorithm_core_comparison": "Original 45 sampling/modeling files hash-identical; paired/event and spatial RNG loops compared exactly.",
+  "limitations": [
+    "Published pool_ids.csv is the saved sampled modeling pool, not every eligible raster cell in the candidate domain. Candidate-cell masks remain private inputs/outputs.",
+    "Historical original NS2 full-positive-IV and independent-negative-split intermediate models are deliberately excluded; only final v4 runs are mapped.",
+    "Training scorer-ID separation does not prove spatial independence or validate all factor acquisition dates.",
+    "Original source is unlicensed; public open-source authorization and data permissions remain pending.",
+    "DTF/DTR/DTW English expansions are not established by filenames alone; authors must verify the factor semantic mapping."
+  ],
+  "v4_table1_internal_seeds": "5/5 rows match",
+  "v4_table4_external_mean_sd": "5/5 rows match",
+  "v4_table5_tie_audit": "8/8 rows match"
+}

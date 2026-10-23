@@ -1,0 +1,108 @@
+project_root: ../..
+experiment_name: NS3_MTHNS
+inputs:
+  positive:
+    path: data/samples/positive_samples.gpkg
+    id_field: positive_id
+  inventory:
+    path: data/historical_landslides.shp
+  historical_buffer:
+    path: data/historical_landslides_buffer25m.shp
+  boundary:
+    path: data/zixing_prj.shp
+  water:
+    path: data/zixing_water_prj.shp
+  reference_raster:
+    path: data/factors/Aspect.tif
+  hardness_raster:
+    path: data/predictions/NS1_seed42.tif
+    source_model: NS1_RF
+    interpretation: candidate_ranking_score
+comparison_samples:
+  NS1:
+    path: data/samples/NS1_seed42_negative_samples.gpkg
+  NS2:
+    path: data/samples/NS2_seed42_negative_samples.gpkg
+inventory:
+  temporal_fields:
+  - Y_2019
+  - Y_2020
+  - Y_2021
+  - Y_2022
+  - Y_2023
+  - Y_2024_7
+  allowed_states:
+  - A
+  - N
+  - E
+  - R
+  - RE
+  - EX
+  - RE/EX
+  - U
+  landslide_states:
+  - N
+  - E
+  - R
+  - RE
+  - EX
+  - RE/EX
+  non_detection_states:
+  - A
+  uncertain_states:
+  - U
+  new_states:
+  - N
+  reactivation_states:
+  - RE
+  - RE/EX
+  expansion_states:
+  - EX
+  - RE/EX
+  combined_states:
+  - RE/EX
+  derived_ever_field: ever_landslide_202407
+  id_field: Id
+buffer_qc:
+  expected_distance_m: 25
+  tolerance_m: 0.1
+  missing_area_tolerance_m2: 0.01
+exclusion:
+  priority:
+  - outside_boundary
+  - reference_nodata
+  - water
+  - historical_landslide_buffer
+  - hardness_nodata
+  codes:
+    outside_boundary: 1
+    reference_nodata: 2
+    water: 3
+    historical_landslide_buffer: 4
+    hardness_nodata: 5
+hard_negative:
+  lower_quantile: 0.7
+  upper_quantile: 0.9
+sampling:
+  total_negative_count: auto
+  random_ratio: 1.0
+  hard_ratio: 0.0
+  seed: 42
+  replace: false
+  id_prefix: NS3
+qc:
+  check_nearest_neighbor: true
+  neighbor_thresholds_m:
+  - 12.5
+  - 25
+  - 50
+  expected_candidate_quantiles: {}
+  quantile_warning_tolerance: 0.01
+  cluster_warning_distance_m: 50
+  cluster_warning_fraction: 0.1
+processing:
+  window_rows: 128
+plots:
+  dpi: 300
+output:
+  root: outputs/H00_seed42/sampling

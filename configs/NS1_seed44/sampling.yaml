@@ -1,0 +1,19 @@
+project_root: ../..
+input:
+  boundary: data/zixing_prj.shp
+  water: data/zixing_water_prj.shp
+  historical_landslides: data/historical_landslides.shp
+  historical_landslide_buffer: data/historical_landslides_buffer25m.shp
+  reference_raster: data/factors/Aspect.tif
+sampling:
+  sample_count_mode: auto
+  manual_sample_count: null
+  random_seed: 44
+  one_negative_per_raster_cell: true
+positive_samples:
+  representative_point_method: centroid_with_inside_fallback
+processing:
+  chunk_rows: 128
+  vector_encoding: null
+output:
+  root: outputs/NS1_seed44/sampling

@@ -1,0 +1,10 @@
+{
+  "domain": "../data/evaluation/common_valid_domain.tif",
+  "events": "../data/evaluation/event_landslide_scores.csv",
+  "output": "../outputs/evaluation",
+  "predictions": [
+    {"pool": "NS3", "seed": 42, "raster": "../data/predictions/NS3_seed42.tif"},
+    {"pool": "H100", "seed": 42, "raster": "../data/predictions/H100_seed42.tif"},
+    {"pool": "Q60", "seed": 42, "raster": "../data/predictions/Q60_seed42.tif"}
+  ]
+}

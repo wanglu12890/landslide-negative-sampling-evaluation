@@ -1,0 +1,19 @@
+pool,seed,run_key,positive_ids_complete,negative_ids_complete,n_positive,n_negative,train_positive,train_negative,test_positive,test_negative,unique_saved_ids,train_test_id_overlap,id_origin
+NS1,42,NS1_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS1,43,NS1_seed43,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS1,44,NS1_seed44,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS2,42,NS2_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS2,43,NS2_seed43,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS2,44,NS2_seed44,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS3,42,NS3_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS3,43,NS3_seed43,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+NS3,44,NS3_seed44,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+H100,42,H100_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+H100,43,H100_seed43,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+H100,44,H100_seed44,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+Q60,42,Q60_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+Q60,43,Q60_seed43,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+Q60,44,Q60_seed44,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+H00,42,H00_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+Q50,42,Q50_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved
+Q80,42,Q80_seed42,True,True,800,800,560,560,240,240,True,0,saved_experiment_tables; order preserved

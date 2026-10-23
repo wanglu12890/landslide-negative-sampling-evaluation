@@ -1,0 +1,1946 @@
+[
+  {
+    "run_key": "NS1_seed42",
+    "pool": "NS1",
+    "seed": 42,
+    "model_run_id": "20261015_211038_175768_seed42",
+    "sampling_run_id": "20261015_211021_724399_seed42",
+    "source_model_run": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42",
+    "source_sampling_run": "Output/Revision/seed42/NS1/runs/20261015_211021_724399_seed42",
+    "sampling_package": "ns1_random_sampling",
+    "model_config": "configs/NS1_seed42/model.yaml",
+    "sampling_config": "configs/NS1_seed42/sampling.yaml",
+    "saved_dataset_sha256": "9fd3ad53624ab63227254401130c8efe46082375e8c1189cc29c71b371cd20d2",
+    "source_train_csv_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_test_csv_sha256": "a20b1d38c663f898bad61354f5af04b523fe9de1ca6d3a906072754752f3f284",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7754513888888889,
+      "Accuracy": 0.7104166666666667,
+      "Precision": 0.701195219123506,
+      "Recall": 0.7333333333333333,
+      "F1": 0.7169042769857433,
+      "Specificity": 0.6875,
+      "Balanced_Accuracy": 0.7104166666666667,
+      "confusion_matrix": {
+        "TN": 165,
+        "FP": 75,
+        "FN": 64,
+        "TP": 176
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.16692523580683633
+        },
+        {
+          "rank": 2,
+          "factor": "NDVI",
+          "importance": 0.14813440417589455
+        },
+        {
+          "rank": 3,
+          "factor": "DTR",
+          "importance": 0.09806217750518649
+        },
+        {
+          "rank": 4,
+          "factor": "Slope",
+          "importance": 0.09737666710871924
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.09332136055192447
+        },
+        {
+          "rank": 6,
+          "factor": "DTF",
+          "importance": 0.09140782749927549
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08224161818890896
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06510732789316137
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.059036418579574625
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.044276909961532586
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.04148078296970325
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.01262926975928246
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "513c9e797ad5071ae3eaa15ccbf93fcfb47044b463d9b942539f30446ff10e23",
+    "source_sampling_config_sha256": "630cc38c4ea86667cde8172f631543764ac3251e889dcaf77b7f9befd0608d37"
+  },
+  {
+    "run_key": "NS1_seed43",
+    "pool": "NS1",
+    "seed": 43,
+    "model_run_id": "20261015_215721_493246_seed43",
+    "sampling_run_id": "20261015_215707_185668_seed43",
+    "source_model_run": "Output/Revision/seed43/LSM/NS1_RF/runs/20261015_215721_493246_seed43",
+    "source_sampling_run": "Output/Revision/seed43/NS1/runs/20261015_215707_185668_seed43",
+    "sampling_package": "ns1_random_sampling",
+    "model_config": "configs/NS1_seed43/model.yaml",
+    "sampling_config": "configs/NS1_seed43/sampling.yaml",
+    "saved_dataset_sha256": "f16ba41da20b2560f5d79fe997385ccecda1b0350f2dea56d7206fbe68c3dbed",
+    "source_train_csv_sha256": "7c482b56dad47792d973abe42fe54f463edfc666f45a4dd4f5fe8e1f1ba078e8",
+    "source_test_csv_sha256": "bf7738cc79bef7e0963038e91ff03ec4fa7744ded73b33abdabb53e6179a3ade",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.810703125,
+      "Accuracy": 0.7333333333333333,
+      "Precision": 0.7372881355932204,
+      "Recall": 0.725,
+      "F1": 0.7310924369747899,
+      "Specificity": 0.7416666666666667,
+      "Balanced_Accuracy": 0.7333333333333334,
+      "confusion_matrix": {
+        "TN": 178,
+        "FP": 62,
+        "FN": 66,
+        "TP": 174
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.16679689330632894
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.1405472472609067
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.10033777747752355
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.09890655748922458
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.08759387996049654
+        },
+        {
+          "rank": 6,
+          "factor": "DTF",
+          "importance": 0.0851402296306072
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08047132859641498
+        },
+        {
+          "rank": 8,
+          "factor": "Aspect",
+          "importance": 0.07296929361383665
+        },
+        {
+          "rank": 9,
+          "factor": "Relief",
+          "importance": 0.06807460775757329
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04598223299164228
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.04131312606188892
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.011866825853556296
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed43/LSM/NS1_RF/runs/20261015_215721_493246_seed43/data/train_samples.csv",
+    "source_scorer_fit_sha256": "7c482b56dad47792d973abe42fe54f463edfc666f45a4dd4f5fe8e1f1ba078e8",
+    "source_model_config_sha256": "2d4a73ef7a5b7038ae38068fd9bfbd5133eec04a08338e92db23972176596afe",
+    "source_sampling_config_sha256": "0eff85114271c3f4686ef07f918550ce5cafa1aedc77cf7b598d6a3b35dbd030"
+  },
+  {
+    "run_key": "NS1_seed44",
+    "pool": "NS1",
+    "seed": 44,
+    "model_run_id": "20261015_220307_388271_seed44",
+    "sampling_run_id": "20261015_220253_103152_seed44",
+    "source_model_run": "Output/Revision/seed44/LSM/NS1_RF/runs/20261015_220307_388271_seed44",
+    "source_sampling_run": "Output/Revision/seed44/NS1/runs/20261015_220253_103152_seed44",
+    "sampling_package": "ns1_random_sampling",
+    "model_config": "configs/NS1_seed44/model.yaml",
+    "sampling_config": "configs/NS1_seed44/sampling.yaml",
+    "saved_dataset_sha256": "174784f728ed90f35625f0fd868a10dab4abb09437333403aa3ac04139e571cf",
+    "source_train_csv_sha256": "33d13f3bd1e17e68dc3a88996f84a99f16af0ce6e34c86541f6c7e553232d651",
+    "source_test_csv_sha256": "8c6d784a1d40c6788fc83f9c16b9287dd7aa54a4b8fcb444cd4e1965ecc3cb37",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.8065711805555555,
+      "Accuracy": 0.7270833333333333,
+      "Precision": 0.7242798353909465,
+      "Recall": 0.7333333333333333,
+      "F1": 0.7287784679089027,
+      "Specificity": 0.7208333333333333,
+      "Balanced_Accuracy": 0.7270833333333333,
+      "confusion_matrix": {
+        "TN": 173,
+        "FP": 67,
+        "FN": 64,
+        "TP": 176
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.14991825118375884
+        },
+        {
+          "rank": 2,
+          "factor": "NDVI",
+          "importance": 0.1487848739723636
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.11317172396506746
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.09829743016513307
+        },
+        {
+          "rank": 5,
+          "factor": "DTF",
+          "importance": 0.09799866931629407
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09118998210048271
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.07868309184027805
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06746851542377039
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05125515669425141
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04811267755842858
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.0415197465821994
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.013599881197972315
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed44/LSM/NS1_RF/runs/20261015_220307_388271_seed44/data/train_samples.csv",
+    "source_scorer_fit_sha256": "33d13f3bd1e17e68dc3a88996f84a99f16af0ce6e34c86541f6c7e553232d651",
+    "source_model_config_sha256": "f9e14450b4718ac3120582d6f78e142153398a0487d2ada90671a1bc0338a724",
+    "source_sampling_config_sha256": "c1d9d8dc515e71d77928c4a04ad302f9daf9eca607d4e8907f94121f2de531ca"
+  },
+  {
+    "run_key": "NS2_seed42",
+    "pool": "NS2",
+    "seed": 42,
+    "model_run_id": "20261023_103316_781350_seed42",
+    "sampling_run_id": "20261022_233653_613237_seed42",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/NS2/seed42/runs/20261023_103316_781350_seed42",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed42/sampling/20261022_233653_613237_seed42",
+    "sampling_package": "ns2_low_susceptibility_sampling",
+    "model_config": "configs/NS2_seed42/model.yaml",
+    "sampling_config": "configs/NS2_seed42/sampling.yaml",
+    "saved_dataset_sha256": "795065246dabc75dd3244e829d2118e34e6d1c83bddf633d3d6434bf2ed0a2dd",
+    "source_train_csv_sha256": "dec38257580d0de494951942cc9fac4f90f7e0c8953f3cd502d5f0faf03f4e98",
+    "source_test_csv_sha256": "a0d00e9bab6102d3e9900b23e6c04099b0c2b83d0c8fb412783b2820fdc76de8",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.9751822916666667,
+      "Accuracy": 0.925,
+      "Precision": 0.9636363636363636,
+      "Recall": 0.8833333333333333,
+      "F1": 0.9217391304347826,
+      "Specificity": 0.9666666666666667,
+      "Balanced_Accuracy": 0.925,
+      "confusion_matrix": {
+        "TN": 232,
+        "FP": 8,
+        "FN": 28,
+        "TP": 212
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.29886541309278625
+        },
+        {
+          "rank": 2,
+          "factor": "Slope",
+          "importance": 0.12277102104114897
+        },
+        {
+          "rank": 3,
+          "factor": "Relief",
+          "importance": 0.09937840097516097
+        },
+        {
+          "rank": 4,
+          "factor": "Aspect",
+          "importance": 0.0851598602191203
+        },
+        {
+          "rank": 5,
+          "factor": "Lithology",
+          "importance": 0.07926266145390422
+        },
+        {
+          "rank": 6,
+          "factor": "DTR",
+          "importance": 0.07427518824107263
+        },
+        {
+          "rank": 7,
+          "factor": "NDVI",
+          "importance": 0.061840505783872374
+        },
+        {
+          "rank": 8,
+          "factor": "Landuse",
+          "importance": 0.04352412242112626
+        },
+        {
+          "rank": 9,
+          "factor": "DTW",
+          "importance": 0.04207000739541891
+        },
+        {
+          "rank": 10,
+          "factor": "TWI",
+          "importance": 0.041145719119500324
+        },
+        {
+          "rank": 11,
+          "factor": "DTF",
+          "importance": 0.035175358083731116
+        },
+        {
+          "rank": 12,
+          "factor": "Curvature",
+          "importance": 0.016531742173157952
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed42/sampling/20261022_233653_613237_seed42/qc/iv_training_positives.csv",
+    "source_scorer_fit_sha256": "f66ae255f6fbb79b0c91051d195a3be6ce95fe5a1b79f236b37780e20dc1b42b",
+    "source_model_config_sha256": "ba8396bf698f6d11a0d73b413e819a9551fc5b672577088387d2a2c854a328cb",
+    "source_sampling_config_sha256": "86906b26164c9bcfd0ab8e89ec9182b1774b5c7debdfe3ffa156e35a2ee5c075"
+  },
+  {
+    "run_key": "NS2_seed43",
+    "pool": "NS2",
+    "seed": 43,
+    "model_run_id": "20261023_103316_783862_seed43",
+    "sampling_run_id": "20261022_233717_605832_seed43",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/NS2/seed43/runs/20261023_103316_783862_seed43",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed43/sampling/20261022_233717_605832_seed43",
+    "sampling_package": "ns2_low_susceptibility_sampling",
+    "model_config": "configs/NS2_seed43/model.yaml",
+    "sampling_config": "configs/NS2_seed43/sampling.yaml",
+    "saved_dataset_sha256": "405f24f3cc612c6364c4a626089d3e96a0df6224351658cd476f525e3ec38ec6",
+    "source_train_csv_sha256": "c66ce837520584d98a35ec6fd1584c829f3b4e4b0679916f37c83cd9b8f0cb9c",
+    "source_test_csv_sha256": "1c198d1baef9555af0343959347c0b709279128cb9683b1e093bc09f2f21b14f",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.9704253472222221,
+      "Accuracy": 0.9125,
+      "Precision": 0.9230769230769231,
+      "Recall": 0.9,
+      "F1": 0.9113924050632911,
+      "Specificity": 0.925,
+      "Balanced_Accuracy": 0.9125000000000001,
+      "confusion_matrix": {
+        "TN": 222,
+        "FP": 18,
+        "FN": 24,
+        "TP": 216
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.3023274529829109
+        },
+        {
+          "rank": 2,
+          "factor": "Slope",
+          "importance": 0.14284007474338395
+        },
+        {
+          "rank": 3,
+          "factor": "Relief",
+          "importance": 0.11980974878378355
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.07854895660397285
+        },
+        {
+          "rank": 5,
+          "factor": "Aspect",
+          "importance": 0.0685532387160092
+        },
+        {
+          "rank": 6,
+          "factor": "NDVI",
+          "importance": 0.067359039693329
+        },
+        {
+          "rank": 7,
+          "factor": "Lithology",
+          "importance": 0.05420915190494571
+        },
+        {
+          "rank": 8,
+          "factor": "DTW",
+          "importance": 0.04167272746794417
+        },
+        {
+          "rank": 9,
+          "factor": "Landuse",
+          "importance": 0.04072058217029469
+        },
+        {
+          "rank": 10,
+          "factor": "DTF",
+          "importance": 0.033336904805621036
+        },
+        {
+          "rank": 11,
+          "factor": "TWI",
+          "importance": 0.03330670000674304
+        },
+        {
+          "rank": 12,
+          "factor": "Curvature",
+          "importance": 0.01731542212106181
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed43/sampling/20261022_233717_605832_seed43/qc/iv_training_positives.csv",
+    "source_scorer_fit_sha256": "6e1ad090318a619dec1f5f377ba78e0c7d6d6d737ad3835cb4b5477749842ad8",
+    "source_model_config_sha256": "540fbd5da04f049b152024297ad6976450fd730878f42aea35d27a5ec8ce804a",
+    "source_sampling_config_sha256": "cc24a734c1ec73728a095ea0f48a90985e3d8fd3b5db904181fb3be1c1c1436d"
+  },
+  {
+    "run_key": "NS2_seed44",
+    "pool": "NS2",
+    "seed": 44,
+    "model_run_id": "20261023_103546_350008_seed44",
+    "sampling_run_id": "20261022_234056_950015_seed44",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/NS2/seed44/runs/20261023_103546_350008_seed44",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed44/sampling/20261022_234056_950015_seed44",
+    "sampling_package": "ns2_low_susceptibility_sampling",
+    "model_config": "configs/NS2_seed44/model.yaml",
+    "sampling_config": "configs/NS2_seed44/sampling.yaml",
+    "saved_dataset_sha256": "6c987264236ea00c82baa0eee383637c2ac709ba3e9035a8f45ce209e22e4906",
+    "source_train_csv_sha256": "58e79470e3baac2470a41cc8abe88c87213a4cb52f61314cbe735baef4ec4992",
+    "source_test_csv_sha256": "b1a520cca50cb22b8c371157f83d0ffa4741059355dbc31fd5ec35f30c53b8e9",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.9755381944444443,
+      "Accuracy": 0.91875,
+      "Precision": 0.9388646288209607,
+      "Recall": 0.8958333333333334,
+      "F1": 0.9168443496801706,
+      "Specificity": 0.9416666666666667,
+      "Balanced_Accuracy": 0.91875,
+      "confusion_matrix": {
+        "TN": 226,
+        "FP": 14,
+        "FN": 25,
+        "TP": 215
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.2770117097353664
+        },
+        {
+          "rank": 2,
+          "factor": "Slope",
+          "importance": 0.15179996708850832
+        },
+        {
+          "rank": 3,
+          "factor": "Relief",
+          "importance": 0.10677013158159306
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.09408853538183672
+        },
+        {
+          "rank": 5,
+          "factor": "Lithology",
+          "importance": 0.06566985283770947
+        },
+        {
+          "rank": 6,
+          "factor": "NDVI",
+          "importance": 0.0626520835983304
+        },
+        {
+          "rank": 7,
+          "factor": "Aspect",
+          "importance": 0.04939914407427058
+        },
+        {
+          "rank": 8,
+          "factor": "DTW",
+          "importance": 0.04779114503448873
+        },
+        {
+          "rank": 9,
+          "factor": "DTF",
+          "importance": 0.04360838525429223
+        },
+        {
+          "rank": 10,
+          "factor": "Landuse",
+          "importance": 0.04322173028258797
+        },
+        {
+          "rank": 11,
+          "factor": "TWI",
+          "importance": 0.039036385399823466
+        },
+        {
+          "rank": 12,
+          "factor": "Curvature",
+          "importance": 0.01895092973119273
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/ns2_repaired/seed44/sampling/20261022_234056_950015_seed44/qc/iv_training_positives.csv",
+    "source_scorer_fit_sha256": "ae758e97058d1e0978d69fe0d966d90d4d4b60bd1cf3c49c5fb92ae5ebdf6fa5",
+    "source_model_config_sha256": "146384cc6c2fe516a252fa0c543ab3c84cc9c9f68792c7831cd6ee51a10c6fc9",
+    "source_sampling_config_sha256": "7efb10630ee11a154e5c3a7e89964118a0fbce407fa9a1c8034d56a41522c839"
+  },
+  {
+    "run_key": "NS3_seed42",
+    "pool": "NS3",
+    "seed": 42,
+    "model_run_id": "20261015_215548_532082_seed42",
+    "sampling_run_id": "20261015_211441_939725_seed42",
+    "source_model_run": "Output/Revision/seed42/LSM/NS3_RF/runs/20261015_215548_532082_seed42",
+    "source_sampling_run": "Output/Revision/seed42/NS3/runs/20261015_211441_939725_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/NS3_seed42/model.yaml",
+    "sampling_config": "configs/NS3_seed42/sampling.yaml",
+    "saved_dataset_sha256": "a9688f13d02771896cc57e2b4d261bf440226dcd852f35f2ebb50b03aa8bfc72",
+    "source_train_csv_sha256": "5893c269ce807dee413c33212db4ddd9c50d5f4f42ab8b482b07d18886c0dd55",
+    "source_test_csv_sha256": "96ae3929e8ff5e85b70e9941437c0baf34fbddbe7e51c5e2a7aa3f3f4d33ecde",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7673263888888888,
+      "Accuracy": 0.7083333333333334,
+      "Precision": 0.7358490566037735,
+      "Recall": 0.65,
+      "F1": 0.6902654867256637,
+      "Specificity": 0.7666666666666667,
+      "Balanced_Accuracy": 0.7083333333333334,
+      "confusion_matrix": {
+        "TN": 184,
+        "FP": 56,
+        "FN": 84,
+        "TP": 156
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.1657633229118648
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.134338526900576
+        },
+        {
+          "rank": 3,
+          "factor": "DTR",
+          "importance": 0.10138835325511235
+        },
+        {
+          "rank": 4,
+          "factor": "Slope",
+          "importance": 0.09836183499297466
+        },
+        {
+          "rank": 5,
+          "factor": "DTF",
+          "importance": 0.09460209362840287
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09384688489295015
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08668685027837093
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06340621446948887
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.06187925816919144
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04809987327364119
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.036892368794785205
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.014734418432641372
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "0366307f21c7a274987be574d3c996fdaeaa1842924d0d90c333caea65f9e1f5",
+    "source_sampling_config_sha256": "518f9421ef0b5d89d76164c6939a31bbe0b99cf185147905b33dd852396c5e48"
+  },
+  {
+    "run_key": "NS3_seed43",
+    "pool": "NS3",
+    "seed": 43,
+    "model_run_id": "20261015_220137_473597_seed43",
+    "sampling_run_id": "20261015_220116_381874_seed43",
+    "source_model_run": "Output/Revision/seed43/LSM/NS3_RF/runs/20261015_220137_473597_seed43",
+    "source_sampling_run": "Output/Revision/seed43/NS3/runs/20261015_220116_381874_seed43",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/NS3_seed43/model.yaml",
+    "sampling_config": "configs/NS3_seed43/sampling.yaml",
+    "saved_dataset_sha256": "5ab84253646806a4b8dc95d4cc2f2c5ed67a8e154707ef38bb06c66dda8c0cab",
+    "source_train_csv_sha256": "5fc3d00f2688f80364761baf45f77b69da262eaeb58ee024333a3f8cafa2ea1d",
+    "source_test_csv_sha256": "71c35bfa45e0a09837d9e00c620fc03707cf0864b8c869465853f18569c3956a",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7812934027777778,
+      "Accuracy": 0.6979166666666666,
+      "Precision": 0.7130044843049327,
+      "Recall": 0.6625,
+      "F1": 0.6868250539956804,
+      "Specificity": 0.7333333333333333,
+      "Balanced_Accuracy": 0.6979166666666666,
+      "confusion_matrix": {
+        "TN": 176,
+        "FP": 64,
+        "FN": 81,
+        "TP": 159
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.1874651096358056
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.12826567704248218
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.0988870300183785
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.09577436633406439
+        },
+        {
+          "rank": 5,
+          "factor": "DTF",
+          "importance": 0.09390262487769062
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09229073058855748
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08518043329526101
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06372098496746087
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05769287607385636
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.045133289341106664
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.033941297332627574
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.017745580492708683
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed43/LSM/NS1_RF/runs/20261015_215721_493246_seed43/data/train_samples.csv",
+    "source_scorer_fit_sha256": "7c482b56dad47792d973abe42fe54f463edfc666f45a4dd4f5fe8e1f1ba078e8",
+    "source_model_config_sha256": "73e65c78eb884725f89448480350a87e6a3728ff6d49ec43edd232a9b071604c",
+    "source_sampling_config_sha256": "5dc124010d2bc34c65ba15bff1cc135e907c0197932b6342d0ca316d22017fad"
+  },
+  {
+    "run_key": "NS3_seed44",
+    "pool": "NS3",
+    "seed": 44,
+    "model_run_id": "20261015_220650_406907_seed44",
+    "sampling_run_id": "20261015_220630_188022_seed44",
+    "source_model_run": "Output/Revision/seed44/LSM/NS3_RF/runs/20261015_220650_406907_seed44",
+    "source_sampling_run": "Output/Revision/seed44/NS3/runs/20261015_220630_188022_seed44",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/NS3_seed44/model.yaml",
+    "sampling_config": "configs/NS3_seed44/sampling.yaml",
+    "saved_dataset_sha256": "9c06f9a48583cc8837b03df59f6d5c78f72ae58fb6ad79a9d274612963144b58",
+    "source_train_csv_sha256": "c6270e9366054e0b2e15864049427b04191a6582ab745e624947d0a3c00f8c8a",
+    "source_test_csv_sha256": "3b55e2a2bb33477af22d10dd22454c1937511d9cea215a902307a8eb119a454f",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7749652777777778,
+      "Accuracy": 0.71875,
+      "Precision": 0.7215189873417721,
+      "Recall": 0.7125,
+      "F1": 0.7169811320754716,
+      "Specificity": 0.725,
+      "Balanced_Accuracy": 0.71875,
+      "confusion_matrix": {
+        "TN": 174,
+        "FP": 66,
+        "FN": 69,
+        "TP": 171
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.16391819835413635
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.13558880325555556
+        },
+        {
+          "rank": 3,
+          "factor": "DTR",
+          "importance": 0.10006095895595944
+        },
+        {
+          "rank": 4,
+          "factor": "Slope",
+          "importance": 0.09808291130530856
+        },
+        {
+          "rank": 5,
+          "factor": "DTF",
+          "importance": 0.09789210712307703
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09701325276875071
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08562748524345215
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06348514417324239
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05449144334635476
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04564362492932636
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.04037105770456927
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.01782501284026735
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed44/LSM/NS1_RF/runs/20261015_220307_388271_seed44/data/train_samples.csv",
+    "source_scorer_fit_sha256": "33d13f3bd1e17e68dc3a88996f84a99f16af0ce6e34c86541f6c7e553232d651",
+    "source_model_config_sha256": "ac9c40259ee18c7b87e7444a7cfddbc5f0f90df1c4ce797f3add1781c2a41dca",
+    "source_sampling_config_sha256": "3c8d0b461c34a5bf742605b3f146639bfcf111ee0fed4d5a7a4d3df5bad4a625"
+  },
+  {
+    "run_key": "H100_seed42",
+    "pool": "H100",
+    "seed": 42,
+    "model_run_id": "20261015_225314_324686_seed42",
+    "sampling_run_id": "20261015_225254_841590_seed42",
+    "source_model_run": "Output/Revision/Hardness/H100/LSM/NS3_H100_RF/runs/20261015_225314_324686_seed42",
+    "source_sampling_run": "Output/Revision/Hardness/H100/NS3/runs/20261015_225254_841590_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/H100_seed42/model.yaml",
+    "sampling_config": "configs/H100_seed42/sampling.yaml",
+    "saved_dataset_sha256": "4530c72146bd1f40c3d4641a586af2e927bf18b45a18e86639d3e5567c28ae5f",
+    "source_train_csv_sha256": "5186964653581d956d3ecbb344c312d5412a1b43b38f00e4cffe42f0e1567e9e",
+    "source_test_csv_sha256": "55625dd6b29d56f5815cf1b5ad6b571ec9c0d456dd53d9368044d7a7561ee8d7",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.772439236111111,
+      "Accuracy": 0.7,
+      "Precision": 0.7201834862385321,
+      "Recall": 0.6541666666666667,
+      "F1": 0.6855895196506551,
+      "Specificity": 0.7458333333333333,
+      "Balanced_Accuracy": 0.7,
+      "confusion_matrix": {
+        "TN": 179,
+        "FP": 61,
+        "FN": 83,
+        "TP": 157
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.18086694848565338
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.11105647442416432
+        },
+        {
+          "rank": 3,
+          "factor": "DTF",
+          "importance": 0.10518584955178022
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.10165916303350624
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.098767467295883
+        },
+        {
+          "rank": 6,
+          "factor": "Slope",
+          "importance": 0.09718572985762584
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.09260977459649422
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06375597818056884
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05507676068460391
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.045643196834466375
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.035673099401060705
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.012519557654192957
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "f142f80b314d6ad1e90a4037ce28c8b845ded81b31703f186e058584afb1a9d3",
+    "source_sampling_config_sha256": "f02409a9638555ba5e4bb3e6214131156356961d0a3edba162773331303aac7b"
+  },
+  {
+    "run_key": "H100_seed43",
+    "pool": "H100",
+    "seed": 43,
+    "model_run_id": "20261023_103546_383001_seed43",
+    "sampling_run_id": "20261022_235448_214746_seed43",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/H100/seed43/runs/20261023_103546_383001_seed43",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/hardness_extra_seeds/H100/seed43/sampling/20261022_235448_214746_seed43",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/H100_seed43/model.yaml",
+    "sampling_config": "configs/H100_seed43/sampling.yaml",
+    "saved_dataset_sha256": "8ed7280735624d5147b14c326f91514e2ee82c342867d3f4cbc05fdf3f214a0a",
+    "source_train_csv_sha256": "5712271c31f85a661e9241d15d69dbb0757432b9455e0c14d899964e779219ae",
+    "source_test_csv_sha256": "d9842e5a1239d394562e25d8f98980455303fc6dfc3b6d9f867dd9c2c0fb0a0c",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7312413194444445,
+      "Accuracy": 0.6833333333333333,
+      "Precision": 0.7037037037037037,
+      "Recall": 0.6333333333333333,
+      "F1": 0.6666666666666666,
+      "Specificity": 0.7333333333333333,
+      "Balanced_Accuracy": 0.6833333333333333,
+      "confusion_matrix": {
+        "TN": 176,
+        "FP": 64,
+        "FN": 88,
+        "TP": 152
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.1679171517545958
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.10923544666317139
+        },
+        {
+          "rank": 3,
+          "factor": "DTR",
+          "importance": 0.10734081776800682
+        },
+        {
+          "rank": 4,
+          "factor": "DTF",
+          "importance": 0.10554530369483943
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.10243993271756809
+        },
+        {
+          "rank": 6,
+          "factor": "TWI",
+          "importance": 0.09994262808034292
+        },
+        {
+          "rank": 7,
+          "factor": "Slope",
+          "importance": 0.09492859380252565
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.0597077054055164
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05831398301466801
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.050140436933877056
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.034336794009544716
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.010151206155343848
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed43/LSM/NS1_RF/runs/20261015_215721_493246_seed43/data/train_samples.csv",
+    "source_scorer_fit_sha256": "7c482b56dad47792d973abe42fe54f463edfc666f45a4dd4f5fe8e1f1ba078e8",
+    "source_model_config_sha256": "85f38e732821cdb1ef61ae9b636e670e469527158229f1631a8d758683929323",
+    "source_sampling_config_sha256": "7dda02295380bc54a7cc50820a72b46846ab5056b01f7ad355ff39633780b78d"
+  },
+  {
+    "run_key": "H100_seed44",
+    "pool": "H100",
+    "seed": 44,
+    "model_run_id": "20261023_103810_462771_seed44",
+    "sampling_run_id": "20261022_235448_215749_seed44",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/H100/seed44/runs/20261023_103810_462771_seed44",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/hardness_extra_seeds/H100/seed44/sampling/20261022_235448_215749_seed44",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/H100_seed44/model.yaml",
+    "sampling_config": "configs/H100_seed44/sampling.yaml",
+    "saved_dataset_sha256": "de6b9c8699acdfd38bf0d207de3f9834223565345989d81c2c8c330611c0147f",
+    "source_train_csv_sha256": "f6792f38eba50df2d242d17f2927abff09b07449a16ed1b4633eff8866d8968a",
+    "source_test_csv_sha256": "6caf8d90a84f5be9f03ce9ca278cc009b869cbdc56cd925842073be8b4bc929a",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7791666666666666,
+      "Accuracy": 0.725,
+      "Precision": 0.7432432432432432,
+      "Recall": 0.6875,
+      "F1": 0.7142857142857143,
+      "Specificity": 0.7625,
+      "Balanced_Accuracy": 0.725,
+      "confusion_matrix": {
+        "TN": 183,
+        "FP": 57,
+        "FN": 75,
+        "TP": 165
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.17056716189218069
+        },
+        {
+          "rank": 2,
+          "factor": "DTF",
+          "importance": 0.11853440064799227
+        },
+        {
+          "rank": 3,
+          "factor": "DTW",
+          "importance": 0.10629468647924299
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.10428347940369119
+        },
+        {
+          "rank": 5,
+          "factor": "Elevation",
+          "importance": 0.1030438989513621
+        },
+        {
+          "rank": 6,
+          "factor": "Slope",
+          "importance": 0.09574267959395895
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.09158113113209206
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06238806362614919
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.06080137874170588
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.05062001589231738
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.030250295338021465
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.005892808301285922
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed44/LSM/NS1_RF/runs/20261015_220307_388271_seed44/data/train_samples.csv",
+    "source_scorer_fit_sha256": "33d13f3bd1e17e68dc3a88996f84a99f16af0ce6e34c86541f6c7e553232d651",
+    "source_model_config_sha256": "63595bd01c175dbe3f9d3f6447e7dcc9f34213ff031a983989cd250a1df39dae",
+    "source_sampling_config_sha256": "5688ef82b5f3a85fe84e2d3c648260aeb21414f3f89ad246ef307c332126dbc7"
+  },
+  {
+    "run_key": "Q60_seed42",
+    "pool": "Q60",
+    "seed": 42,
+    "model_run_id": "20261015_224817_754566_seed42",
+    "sampling_run_id": "20261015_224757_182042_seed42",
+    "source_model_run": "Output/Revision/Hardness/Q60/LSM/NS3_Q60_RF/runs/20261015_224817_754566_seed42",
+    "source_sampling_run": "Output/Revision/Hardness/Q60/NS3/runs/20261015_224757_182042_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/Q60_seed42/model.yaml",
+    "sampling_config": "configs/Q60_seed42/sampling.yaml",
+    "saved_dataset_sha256": "6b35af470edf46a3152fddaf09ddb573aed6ba7ee2c0fa38b2a9cb79380a63cf",
+    "source_train_csv_sha256": "ee8251b7abc9c3c56751ffb5d19cafaefeff7535b23643784e2e44cf465e9390",
+    "source_test_csv_sha256": "3d3feb95fe63f3d4e2e247154b3babdb874b57402ca02e98b8e753446359d17f",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.8050520833333333,
+      "Accuracy": 0.7416666666666667,
+      "Precision": 0.75,
+      "Recall": 0.725,
+      "F1": 0.7372881355932204,
+      "Specificity": 0.7583333333333333,
+      "Balanced_Accuracy": 0.7416666666666667,
+      "confusion_matrix": {
+        "TN": 182,
+        "FP": 58,
+        "FN": 66,
+        "TP": 174
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.1755757021801113
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.13377535620946812
+        },
+        {
+          "rank": 3,
+          "factor": "DTR",
+          "importance": 0.10027242222771374
+        },
+        {
+          "rank": 4,
+          "factor": "DTF",
+          "importance": 0.09239554368309216
+        },
+        {
+          "rank": 5,
+          "factor": "Slope",
+          "importance": 0.09123349125678767
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09072169313572863
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.08362397544537514
+        },
+        {
+          "rank": 8,
+          "factor": "Aspect",
+          "importance": 0.06868716723498201
+        },
+        {
+          "rank": 9,
+          "factor": "Relief",
+          "importance": 0.06136684372894058
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04681746279185773
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.044375194772686
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.011155147333257079
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "68ec064382e98d15a1547f948dd100e2db2c2e011c7c3b045365f2aed9216f82",
+    "source_sampling_config_sha256": "22cf4c37d10386ecd48360b76df187594c5e16d6b403ca35f19fd2db0a0664bd"
+  },
+  {
+    "run_key": "Q60_seed43",
+    "pool": "Q60",
+    "seed": 43,
+    "model_run_id": "20261023_103811_076790_seed43",
+    "sampling_run_id": "20261022_235641_570610_seed43",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/Q60/seed43/runs/20261023_103811_076790_seed43",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/hardness_extra_seeds/Q60/seed43/sampling/20261022_235641_570610_seed43",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/Q60_seed43/model.yaml",
+    "sampling_config": "configs/Q60_seed43/sampling.yaml",
+    "saved_dataset_sha256": "0eebd3801a4bd660d57d1b90c41c6244db745b1163940b186c893b2efabda793",
+    "source_train_csv_sha256": "0b4c226d6b1f2d0d3c84cb723e005f0670775d0923c53b8c01151bc0768e1039",
+    "source_test_csv_sha256": "7ae8596474e985c9924a1d880067323e742ec4aa300f662aa93fdcd94d5b1fe5",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7964409722222223,
+      "Accuracy": 0.70625,
+      "Precision": 0.7368421052631579,
+      "Recall": 0.6416666666666667,
+      "F1": 0.6859688195991092,
+      "Specificity": 0.7708333333333334,
+      "Balanced_Accuracy": 0.70625,
+      "confusion_matrix": {
+        "TN": 185,
+        "FP": 55,
+        "FN": 86,
+        "TP": 154
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.18746680690241405
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.1333882113187864
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.10670453732507808
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.09803269649652788
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.09230398911198172
+        },
+        {
+          "rank": 6,
+          "factor": "DTF",
+          "importance": 0.08943159282906667
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.07819176426044723
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06824978008122036
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05430419935893993
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.04391129228473903
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.03473436953831915
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.01328076049247953
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed43/LSM/NS1_RF/runs/20261015_215721_493246_seed43/data/train_samples.csv",
+    "source_scorer_fit_sha256": "7c482b56dad47792d973abe42fe54f463edfc666f45a4dd4f5fe8e1f1ba078e8",
+    "source_model_config_sha256": "166c78958b314a2adae82b3647643547f30b171820c8038e2e8f1a0c42b3cf7a",
+    "source_sampling_config_sha256": "b7c3cb5f0b7bc2b1595f2d4efdb84eeadeff99c604508788d11c8d8925a3ad09"
+  },
+  {
+    "run_key": "Q60_seed44",
+    "pool": "Q60",
+    "seed": 44,
+    "model_run_id": "20261023_103940_577775_seed44",
+    "sampling_run_id": "20261022_235642_043904_seed44",
+    "source_model_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/unified_split/Q60/seed44/runs/20261023_103940_577775_seed44",
+    "source_sampling_run": "\u8bba\u6587\u4fee\u56de/revision_final/experiments/hardness_extra_seeds/Q60/seed44/sampling/20261022_235642_043904_seed44",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/Q60_seed44/model.yaml",
+    "sampling_config": "configs/Q60_seed44/sampling.yaml",
+    "saved_dataset_sha256": "5b30bc483d5ea3b21b878a94cf709ffad99081180541da5f6a8703ca3c6dc822",
+    "source_train_csv_sha256": "82ca1c335e63c42992648961129f75f2265f7c34d590ec86c379f2f6a709528d",
+    "source_test_csv_sha256": "fa6b71961f0320ae5f37f0143371bd14bdaad7b0cbf59ba7f346716dc8198447",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.8068229166666667,
+      "Accuracy": 0.7291666666666666,
+      "Precision": 0.7350427350427351,
+      "Recall": 0.7166666666666667,
+      "F1": 0.7257383966244726,
+      "Specificity": 0.7416666666666667,
+      "Balanced_Accuracy": 0.7291666666666667,
+      "confusion_matrix": {
+        "TN": 178,
+        "FP": 62,
+        "FN": 68,
+        "TP": 172
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.16706139818191448
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.1350742911578124
+        },
+        {
+          "rank": 3,
+          "factor": "DTF",
+          "importance": 0.10490011456793345
+        },
+        {
+          "rank": 4,
+          "factor": "Slope",
+          "importance": 0.10104924873958444
+        },
+        {
+          "rank": 5,
+          "factor": "DTR",
+          "importance": 0.09325508934299974
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.09239174541783776
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.07737524721536891
+        },
+        {
+          "rank": 8,
+          "factor": "Aspect",
+          "importance": 0.06712046925910106
+        },
+        {
+          "rank": 9,
+          "factor": "Relief",
+          "importance": 0.06515869451444863
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.042604769841501855
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.03985932801809476
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.014149603743402604
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed44/LSM/NS1_RF/runs/20261015_220307_388271_seed44/data/train_samples.csv",
+    "source_scorer_fit_sha256": "33d13f3bd1e17e68dc3a88996f84a99f16af0ce6e34c86541f6c7e553232d651",
+    "source_model_config_sha256": "3c0eea51f8e70356c33d8cd7f48622056cf83d3f13482e7270ad921d323daeb6",
+    "source_sampling_config_sha256": "5168e38900c207915ad7e70e5e67bb70dc431235da2f7de62e1aa4d30965f1dc"
+  },
+  {
+    "run_key": "H00_seed42",
+    "pool": "H00",
+    "seed": 42,
+    "model_run_id": "20261015_225140_706178_seed42",
+    "sampling_run_id": "20261015_225120_046689_seed42",
+    "source_model_run": "Output/Revision/Hardness/H00/LSM/NS3_H00_RF/runs/20261015_225140_706178_seed42",
+    "source_sampling_run": "Output/Revision/Hardness/H00/NS3/runs/20261015_225120_046689_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/H00_seed42/model.yaml",
+    "sampling_config": "configs/H00_seed42/sampling.yaml",
+    "saved_dataset_sha256": "a2fda29ca6686be1f1ef87ef7d686824bc047ae5fc2e2a9db8c8e771aa8a189d",
+    "source_train_csv_sha256": "2d8fed30687c4a09b6661e2f63c1323315daa5d9e0ed7e6b72215f6bd375b104",
+    "source_test_csv_sha256": "f562d5bc2739c5aa8c233cb83b68647dcd2a7f72c41caf86c760f03d7344c08e",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.9103559027777778,
+      "Accuracy": 0.8291666666666667,
+      "Precision": 0.883495145631068,
+      "Recall": 0.7583333333333333,
+      "F1": 0.8161434977578476,
+      "Specificity": 0.9,
+      "Balanced_Accuracy": 0.8291666666666666,
+      "confusion_matrix": {
+        "TN": 216,
+        "FP": 24,
+        "FN": 58,
+        "TP": 182
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "Elevation",
+          "importance": 0.18427903944551166
+        },
+        {
+          "rank": 2,
+          "factor": "NDVI",
+          "importance": 0.16363749286027426
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.09730287334241779
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.08381626155581547
+        },
+        {
+          "rank": 5,
+          "factor": "DTW",
+          "importance": 0.08194779739462159
+        },
+        {
+          "rank": 6,
+          "factor": "DTF",
+          "importance": 0.08099793258169949
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.06831294952652349
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06427187950571973
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.06353102665367724
+        },
+        {
+          "rank": 10,
+          "factor": "Lithology",
+          "importance": 0.058218071196835385
+        },
+        {
+          "rank": 11,
+          "factor": "Curvature",
+          "importance": 0.030635493759364942
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.02304918217753909
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "be825361aacfabab3ed3161f9f4a44a26810ca4fac711392d6e01aeaabc64f80",
+    "source_sampling_config_sha256": "0313aa8890bb3698487c9d2d080395cad2bfc3a891ab00c794eb52d6a291fa84"
+  },
+  {
+    "run_key": "Q50_seed42",
+    "pool": "Q50",
+    "seed": 42,
+    "model_run_id": "20261016_090827_027624_seed42",
+    "sampling_run_id": "20261015_220758_194308_seed42",
+    "source_model_run": "Output/Revision/Hardness/Q50/LSM/NS3_Q50_RF/runs/20261016_090827_027624_seed42",
+    "source_sampling_run": "Output/Revision/Hardness/Q50/NS3/runs/20261015_220758_194308_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/Q50_seed42/model.yaml",
+    "sampling_config": "configs/Q50_seed42/sampling.yaml",
+    "saved_dataset_sha256": "5c28d381540a380b35e3ffa13de0cbe2dfe18f85909fa632188a631c22e09530",
+    "source_train_csv_sha256": "e03ed4fa81f3233a2dfeed7e2ee5caeaf0fe9cebdea3a1e75ef0c79a983d393a",
+    "source_test_csv_sha256": "0268e7133617f46b3b5c9ea2fc30c3e2c48aecb83f568bbf9ea9175f6844fc9b",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.8260416666666667,
+      "Accuracy": 0.73125,
+      "Precision": 0.7361702127659574,
+      "Recall": 0.7208333333333333,
+      "F1": 0.728421052631579,
+      "Specificity": 0.7416666666666667,
+      "Balanced_Accuracy": 0.73125,
+      "confusion_matrix": {
+        "TN": 178,
+        "FP": 62,
+        "FN": 67,
+        "TP": 173
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.178965416576904
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.1541006657647774
+        },
+        {
+          "rank": 3,
+          "factor": "Slope",
+          "importance": 0.09429365490734169
+        },
+        {
+          "rank": 4,
+          "factor": "DTF",
+          "importance": 0.09315932852194847
+        },
+        {
+          "rank": 5,
+          "factor": "DTR",
+          "importance": 0.09065706318958783
+        },
+        {
+          "rank": 6,
+          "factor": "DTW",
+          "importance": 0.08799185686667019
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.0733664552579511
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06910531787022486
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.05808992773497749
+        },
+        {
+          "rank": 10,
+          "factor": "Lithology",
+          "importance": 0.04728653514491874
+        },
+        {
+          "rank": 11,
+          "factor": "Curvature",
+          "importance": 0.043536263161813735
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.009447515002884323
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "ba334b5c534181c196f874cb0761ebc6f147e129db0514fde64c3d21efb45513",
+    "source_sampling_config_sha256": "74c3a4fd59f4cedf773ec6937a449a0dc2faa15b4184e07a1b0cac28c490ef9c"
+  },
+  {
+    "run_key": "Q80_seed42",
+    "pool": "Q80",
+    "seed": 42,
+    "model_run_id": "20261015_224955_924112_seed42",
+    "sampling_run_id": "20261015_224930_560960_seed42",
+    "source_model_run": "Output/Revision/Hardness/Q80/LSM/NS3_Q80_RF/runs/20261015_224955_924112_seed42",
+    "source_sampling_run": "Output/Revision/Hardness/Q80/NS3/runs/20261015_224930_560960_seed42",
+    "sampling_package": "ns3_hard_negative_sampling",
+    "model_config": "configs/Q80_seed42/model.yaml",
+    "sampling_config": "configs/Q80_seed42/sampling.yaml",
+    "saved_dataset_sha256": "fbecf3b26b07da6c487c10fec2cc78dbea740eeade988ef21f8750000212c4c7",
+    "source_train_csv_sha256": "0435c1e7a32044a980421d6e17124ce45df556d379aec74c92637ef0ef229510",
+    "source_test_csv_sha256": "dd009b764fc0edfb01122a4fc8b9f039d6f3412101184a8a7c6b0f9d7c04ecf4",
+    "qc_status": "PASS",
+    "metrics": {
+      "ROC_AUC": 0.7481684027777777,
+      "Accuracy": 0.68125,
+      "Precision": 0.704225352112676,
+      "Recall": 0.625,
+      "F1": 0.6622516556291391,
+      "Specificity": 0.7375,
+      "Balanced_Accuracy": 0.68125,
+      "confusion_matrix": {
+        "TN": 177,
+        "FP": 63,
+        "FN": 90,
+        "TP": 150
+      },
+      "feature_importance": [
+        {
+          "rank": 1,
+          "factor": "NDVI",
+          "importance": 0.1816389308187691
+        },
+        {
+          "rank": 2,
+          "factor": "Elevation",
+          "importance": 0.1250075582076292
+        },
+        {
+          "rank": 3,
+          "factor": "DTW",
+          "importance": 0.10139076801856887
+        },
+        {
+          "rank": 4,
+          "factor": "DTR",
+          "importance": 0.0976736751868912
+        },
+        {
+          "rank": 5,
+          "factor": "DTF",
+          "importance": 0.09681129847716713
+        },
+        {
+          "rank": 6,
+          "factor": "Slope",
+          "importance": 0.0888559731117098
+        },
+        {
+          "rank": 7,
+          "factor": "TWI",
+          "importance": 0.0881008692073959
+        },
+        {
+          "rank": 8,
+          "factor": "Relief",
+          "importance": 0.06315260754613428
+        },
+        {
+          "rank": 9,
+          "factor": "Aspect",
+          "importance": 0.059874526017241005
+        },
+        {
+          "rank": 10,
+          "factor": "Curvature",
+          "importance": 0.047255006631883006
+        },
+        {
+          "rank": 11,
+          "factor": "Lithology",
+          "importance": 0.03338678253648943
+        },
+        {
+          "rank": 12,
+          "factor": "Landuse",
+          "importance": 0.01685200424012108
+        }
+      ]
+    },
+    "versions": {
+      "geopandas": "1.0.1",
+      "rasterio": "1.4.3",
+      "numpy": "2.0.2",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.5.2",
+      "shapely": "2.1.2",
+      "joblib": "1.4.2",
+      "matplotlib": "3.9.2",
+      "pyyaml": "6.0.2"
+    },
+    "source_scorer_fit_table": "Output/Revision/seed42/LSM/NS1_RF/runs/20261015_211038_175768_seed42/data/train_samples.csv",
+    "source_scorer_fit_sha256": "78a4a0fc507818f959ac8fe7d0c95278139fe74a0c5735ece320adfaae8d3422",
+    "source_model_config_sha256": "1f24f307883cd48e85104c4f44e2d46b596777ac3f5cf17d33a0794dca60037f",
+    "source_sampling_config_sha256": "ef310a56d234368916c8e56e9edba0bc9d670cd0cb89a7613abb885cb48fc55b"
+  }
+]

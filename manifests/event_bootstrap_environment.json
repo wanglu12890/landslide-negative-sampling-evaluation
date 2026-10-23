@@ -1,0 +1,42 @@
+{
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "budgets": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "iterations": 10000,
+  "master_seed": 20261023,
+  "rng": "numpy.default_rng PCG64",
+  "seed_rule": "master_seed + training_seed",
+  "interval": "marginal 95% percentile; no multiplicity adjustment",
+  "resampling": "n events with replacement; same indices across budgets and comparisons within seed",
+  "numpy": "2.2.2",
+  "pandas": "2.2.3",
+  "python": "3.12.0",
+  "input_sha256": {
+    "NS3_seed42_event_ranks.npz": "03e11cd904f3a175e72a3485241283e6ff1755d0d14775a1c52d63581545eeba",
+    "H100_seed42_event_ranks.npz": "5de82f7b0ea6515e356f8a301feb19cce17617ac06f16be20778f9f5b6e301ed",
+    "Q60_seed42_event_ranks.npz": "92a2a9c193fecb87ffe1964b2078af7b0578231ebd78e782133e35c28b391d62",
+    "NS3_seed43_event_ranks.npz": "d786bc8b9ccd8df82edf7786936d49107a76388439150fe1e78d3b4e983e5481",
+    "H100_seed43_event_ranks.npz": "19aa8c9fc6752e4e6b1c004c4ab2b8caadb644581cdd5d84f5987c4141bfa9e2",
+    "Q60_seed43_event_ranks.npz": "e9ecb2821e4ba672dbfd51696e8ac451293740eaba5e6cba43867ec6b95725ce",
+    "NS3_seed44_event_ranks.npz": "bbdef33734cca4da849ca412a4133715e3a70a3352a4524fc0642a45b3ff8fb6",
+    "H100_seed44_event_ranks.npz": "212ae14845bb0614f877210506a15efa83655a8a2fc47c31a8dbdde4dba45331",
+    "Q60_seed44_event_ranks.npz": "be06af35d491e311fce55bf27955f5e789bd99a6dff25ea544ea8fa028641d87"
+  },
+  "script_sha256": "a79776845d3afb561167950b0a515dd1fb0383ad580e0bbd92b451bdfeaad2ff",
+  "elapsed_seconds": 18.153077125549316,
+  "tests": [
+    "aligned event ID and pixel coordinates",
+    "same N and n across pairs",
+    "point estimates match unified table",
+    "paired estimator identity",
+    "swap-comparison antisymmetry"
+  ]
+}

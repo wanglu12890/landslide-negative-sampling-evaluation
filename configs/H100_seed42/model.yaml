@@ -1,0 +1,71 @@
+project_root: ../..
+experiment_name: NS3_H100_RF
+samples:
+  positive_samples: data/samples/positive_samples.gpkg
+  negative_samples: data/samples/H100_seed42_negative_samples.gpkg
+allow_imbalanced_samples: false
+factors:
+  directory: data/factors
+  continuous:
+  - Curvature
+  - DTF
+  - DTR
+  - DTW
+  - Elevation
+  - NDVI
+  - Relief
+  - Slope
+  - TWI
+  categorical:
+  - Aspect
+  - Landuse
+  - Lithology
+  feature_order:
+  - Aspect
+  - Curvature
+  - DTF
+  - DTR
+  - DTW
+  - Elevation
+  - Landuse
+  - Lithology
+  - NDVI
+  - Relief
+  - Slope
+  - TWI
+  files:
+    Aspect: Aspect.tif
+    Curvature: Curvature.tif
+    DTF: DTF.tif
+    DTR: DTR.tif
+    DTW: DTW.tif
+    Elevation: Elevation.tif
+    Landuse: Landuse.tif
+    Lithology: Lithology.tif
+    NDVI: NDVI.tif
+    Relief: Relief.tif
+    Slope: Slope.tif
+    TWI: TWI.tif
+reference_raster: Aspect
+data_quality:
+  stop_on_invalid_sample: true
+split:
+  test_size: 0.3
+  random_seed: 42
+  stratify: true
+model:
+  type: RandomForest
+  random_state: 42
+  params:
+    n_estimators: 500
+    max_depth: null
+    min_samples_split: 2
+    min_samples_leaf: 1
+    max_features: sqrt
+    bootstrap: true
+    n_jobs: -1
+    class_weight: null
+prediction:
+  batch_size: 200000
+output:
+  root: outputs/H100_seed42/model

@@ -1,0 +1,19 @@
+{
+  "scanned_text_files": 196,
+  "total_bytes": 3506457,
+  "extensions": {
+    "": 2,
+    ".md": 8,
+    ".txt": 2,
+    ".json": 8,
+    ".csv": 88,
+    ".py": 52,
+    ".yaml": 36
+  },
+  "credential_path_identity_findings": [],
+  "forbidden_artifacts": [],
+  "raw_coordinates_features_geodata_included": false,
+  "git_history_included": false,
+  "publication_status": "author license and data approval pending; not uploaded",
+  "scope": "Pattern and allowlist review; not a proof of absence of all secrets"
+}
