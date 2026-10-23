@@ -1,0 +1,12 @@
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.5.2
+geopandas==1.0.1
+rasterio==1.4.3
+shapely==2.1.2
+joblib==1.4.2
+matplotlib==3.9.2
+PyYAML==6.0.2
+scipy
+pyproj
+pyogrio

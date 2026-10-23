@@ -1,0 +1,4 @@
+scale_m,occupied_blocks,n_events,min_events,median_events,max_events,singleton_blocks,event_share_largest
+1000,982,22503,1,12.0,182,157,0.0080878105141536
+2000,328,22503,1,24.5,537,47,0.0238634848686841
+5000,78,22503,1,32.0,2651,9,0.1178065146869306
