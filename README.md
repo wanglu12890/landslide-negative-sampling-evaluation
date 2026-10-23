@@ -4,8 +4,6 @@
 
 **Internal Discrimination Does Not Predict Ranking Utility: Negative-Sample Construction for Budget-Constrained Spatial Prioritization** — Lu Wang and Yuzhang Qin; ICAIDM 2026 revision, v4. Acceptance status, venue metadata and DOI are not asserted.
 
-This is an offline release candidate. The authors must approve ownership, the code license and the derivative-data release before publication. See LICENSE and docs/PUBLIC_RELEASE_AUDIT.md.
-
 ## Overview
 
 This package extracts the actual eight-pool Random Forest experiments and their saved sample/split IDs. It separates strategy-conditioned internal ROC-AUC from strict-area event ranking. It includes final v4 results and the paired event/spatial bootstrap implementations. Original algorithms and historical results are not modified.
