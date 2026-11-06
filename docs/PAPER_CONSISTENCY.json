@@ -1,16 +1,66 @@
 {
-  "v4_seed42_numeric_rows": "8/8 exact at manuscript precision",
-  "v4_interval_rows": "24/24 exact at manuscript precision",
+  "numerical_comparison_scope": "Earlier v4 numerical checks; not a new comparison against every subsequent manuscript edit.",
+  "v4_seed42_numeric_rows": "8/8 match at checked manuscript precision",
+  "v4_interval_rows": "24/24 match at checked manuscript precision",
+  "v4_internal_seed_summary_rows": "5/5 match at checked manuscript precision",
+  "v4_external_mean_sd_rows": "5/5 match at checked manuscript precision",
+  "v4_tie_audit_rows": "8/8 match at checked manuscript precision",
+  "result_file_mapping": "See README for mappings by analysis content rather than manuscript table number.",
   "scorer_id_isolation": "18/18 pass",
-  "algorithm_core_comparison": "Original 45 sampling/modeling files hash-identical; paired/event and spatial RNG loops compared exactly.",
+  "algorithm_core_comparison": "Earlier comparison: 45 original sampling/modeling files were hash-identical; paired event and spatial bootstrap RNG loops were compared exactly.",
+  "release_validation": {
+    "required_manifest_csv_files": 72,
+    "present_manifest_csv_files": 72,
+    "recorded_runs": 18,
+    "manifest_files_per_run": [
+      "pool_ids.csv",
+      "train_ids.csv",
+      "test_ids.csv",
+      "scorer_fit_positive_ids.csv"
+    ],
+    "manifest_content_comparison": "All 72 files match the original release package.",
+    "command": "python scripts/verify_release.py --self-test",
+    "status": "PASS on the updated public download",
+    "checks": [
+      "Python syntax and source module imports",
+      "Saved IDs, configurations, canonical split membership and order",
+      "Scorer-fit positive-ID separation",
+      "Source and result file hashes",
+      "Aggregate-result consistency",
+      "Command-line help",
+      "Synthetic exact-area ranking, ties, Lift and complete SR-AUC",
+      "Paired spatial-block calculations with repeated blocks and variable denominators"
+    ],
+    "scope": "Integrity and lightweight functional validation; not end-to-end reproduction with private geospatial inputs."
+  },
+  "evaluation_design": {
+    "event_evaluation": "Temporally held-out; strict spatial or cross-event independence is not established.",
+    "historical_positive_count": 800,
+    "supervised_scorer_training_positive_count": 560,
+    "exclusion_mask": "25 m buffer constructed from all 800 historical polygons, including those later assigned to internal testing.",
+    "pre_event_subset": {
+      "count": 125,
+      "identification_period": "December 2023 to 24 July 2024",
+      "base_imagery": "PlanetScope imagery acquired on 24 July 2024"
+    },
+    "exclusion_sensitivity_performed": false,
+    "overlap_robustness": "Untested",
+    "uncertainty": "Event-level and spatial-block intervals describe fixed-prediction event-sampling uncertainty; training-seed variability is reported separately."
+  },
+  "factor_definitions": {
+    "DTF": "Distance to faults",
+    "DTR": "Distance to roads",
+    "DTW": "Distance to waterways",
+    "sources_and_resolutions": "Documented in the manuscript and README."
+  },
+  "code_license": "MIT; see LICENSE",
   "limitations": [
-    "Published pool_ids.csv is the saved sampled modeling pool, not every eligible raster cell in the candidate domain. Candidate-cell masks remain private inputs/outputs.",
-    "Historical original NS2 full-positive-IV and independent-negative-split intermediate models are deliberately excluded; only final v4 runs are mapped.",
-    "Training scorer-ID separation does not prove spatial independence or validate all factor acquisition dates.",
-    "Original source is unlicensed; public open-source authorization and data permissions remain pending.",
-    "DTF/DTR/DTW English expansions are not established by filenames alone; authors must verify the factor semantic mapping."
-  ],
-  "v4_table1_internal_seeds": "5/5 rows match",
-  "v4_table4_external_mean_sd": "5/5 rows match",
-  "v4_table5_tie_audit": "8/8 rows match"
+    "Published pool_ids.csv represents the saved sampled modeling pool, not every eligible raster cell in the negative-candidate domain. Candidate-cell masks remain private inputs or outputs.",
+    "Historical NS2 models using full-positive IV fitting and intermediate models using independent negative splitting are excluded; only final recorded runs are mapped.",
+    "Training-only supervised scorer fitting does not establish strict training-only spatial isolation because the exclusion mask uses all historical polygons.",
+    "No exclusion sensitivity analysis was conducted for the 125 pre-event historical landslides or for historical polygons overlapping the post-event inventory.",
+    "Spatial-block bootstrap depends on the tested block scales and does not establish robustness to historical/event inventory overlap.",
+    "The code license does not establish redistribution rights for private geospatial inputs or derived records.",
+    "Full reproduction requires the authorized private inputs described in README and DATA_AVAILABILITY.md."
+  ]
 }
