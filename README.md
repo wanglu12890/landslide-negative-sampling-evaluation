@@ -86,7 +86,7 @@ There are 18 actual final model runs: NS1/NS2/NS3/H100/Q60 each at 42/43/44; H00
 
 Each recorded run requires four files under `manifests/splits/<run_key>/`: `pool_ids.csv` (1,600 records), `train_ids.csv` (1,120), `test_ids.csv` (480), and `scorer_fit_positive_ids.csv` (560). Across 18 runs, the complete set contains 72 CSV files. Row counts exclude headers. `not_run` refers to experiments that were not performed; it must not be used to describe missing manifests for recorded runs.
 
-**Manifest completion status of the reviewed download:** 42 of the required 72 CSV files are present. NS3 seed 42 lacks `train_ids.csv` and `test_ids.csv`; NS3 seeds 43–44, Q60 seeds 42–44, Q50 seed 42 and Q80 seed 42 each lack all four files. The corresponding saved files exist in the authors' original release package. Restore the 30 missing files, then verify a fresh download of the updated public repository before reporting release validation as complete.
+The public release includes all 72 required manifest CSV files for the 18 recorded runs. A fresh download of the release passed `python scripts/verify_release.py --self-test`. This verifies included manifests, configurations, source/result integrity and lightweight functional behavior; it does not constitute end-to-end reproduction with private geospatial inputs.
 
 
 Every run contains 800 positive + 800 negative IDs; canonical combined stratified 70/30 splitting gives 560+560 train and 240+240 test. Saved ID order is preserved. `run_model.py` calls the original split function and checks exact ID membership **and order** against the original run records. It does not regenerate or invent historical IDs. IDs are unique within a run; negative IDs may denote different locations in different runs, so use `(run_key,sample_id)` as the compound key.
@@ -97,7 +97,7 @@ The final NS2 wrapper fits IV only on the 560 saved positive training IDs. Basel
 
 ## How to Run
 
-Run these commands from this repository root. The following first command needs no private data and performs no training. It requires the complete manifest set described above and will fail on the reviewed incomplete download:
+Run these commands from this repository root. The following first command needs no private data and performs no training. It requires the complete manifest set described above:
 
 ```sh
 python scripts/verify_release.py --self-test
