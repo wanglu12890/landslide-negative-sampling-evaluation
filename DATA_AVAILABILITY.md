@@ -1,18 +1,81 @@
 # Data availability and reproduction boundary
 
-## Included, subject to author release approval
+## Included in the public release
 
-Aggregate metrics and bootstrap intervals; run-local positive/negative sampled IDs and saved train/test ID order; relative run identifiers, file hashes, code and portable configurations. IDs were extracted from saved tables, not newly randomized. They contain no coordinate columns, raster indices, feature values or source geometry. Still confirm permission for these derived records before publication.
+The repository includes code, portable experiment configurations, aggregate metrics and bootstrap intervals, relative run identifiers, file hashes, and coordinate-free sample-ID manifests.
+
+All 18 recorded runs have four manifest files: `pool_ids.csv`, `train_ids.csv`, `test_ids.csv`, and `scorer_fit_positive_ids.csv`, giving 72 CSV files in total. These preserve the saved sampled IDs, labels and record order. IDs were extracted from recorded experiment tables, not newly randomized.
+
+The manifests contain no coordinate columns, raster indices, factor values or source geometries. Negative IDs are run-local; use `(run_key, sample_id)` to distinguish records across runs. `pool_ids.csv` describes the sampled modeling dataset, not every eligible negative-candidate cell.
+
+Conditioning-factor sources, resolutions and available acquisition years are documented in the README and manuscript.
 
 ## Not redistributed
 
-Remote-sensing imagery, factor rasters, original vector inventories and attributes, polygons/point coordinates, water/boundary/buffer layers, event-level ranks/differences, event-to-block maps, serialized models, prediction rasters, private source metadata XML, workstation logs and Git history. Their upstream licenses and redistribution permissions are unknown here. No download endpoint or commercial-data entitlement is assumed.
+The repository does not include:
 
-## What can run
+- Original remote-sensing imagery and source geospatial datasets.
+- Factor rasters, historical and post-event vector inventories, original attributes, or sample geometries and coordinates.
+- Study-area boundary, water layers and historical-landslide buffer geometries.
+- Event-level ranks or paired differences, event-to-block mappings, serialized models or prediction rasters.
+- Private source metadata XML and workstation logs.
 
-1. Independently with included files: integrity checks, ID/count/config consistency and synthetic ranking/cluster smoke tests.
-2. With authorized prediction fields plus common-domain mask and event representatives: exact-area ranking and event/spatial bootstrap.
-3. With original factors, geometry and stable point/feature order: sampling and RF training, guarded by original IDs.
-4. Not available from this package alone: an end-to-end exact replication, exhaustive candidate-cell pool IDs, missing seed runs, or acquisition-source metadata.
+Public descriptions of data sources do not provide access to these private inputs or permission to redistribute them. Access is subject to the applicable data owners' terms; no unrestricted download or commercial-imagery entitlement is promised.
 
-Stage user-owned inputs under `data/` as documented in the configurations. Generated samples/predictions are private outputs; they are not automatically staged or approved for release. The coarse spatial grid origin retained in statistics metadata is a reproducibility parameter, not an event coordinate list.
+## Reproduction supported without private inputs
+
+The included files support:
+
+- Manifest completeness, ID/count and configuration checks.
+- Canonical train/test split membership and order checks.
+- Supervised scorer-fit positive-ID separation checks.
+- Source/result hash and aggregate-result consistency checks.
+- Synthetic tests of exact-area ranking, tied scores, Lift, complete success-rate AUC and paired spatial-block calculations.
+
+Run from the repository root:
+
+    python scripts/verify_release.py --self-test
+
+A fresh download containing the complete manifests passed this command. These checks provide integrity and lightweight functional validation; they do not constitute end-to-end reproduction of the experiments.
+
+## Private inputs required for sampling and training
+
+Full sampling and RF training reproduction requires the authorized inputs referenced by the per-run configurations:
+
+- The original historical landslide inventory, including attributes required by the inventory checks.
+- The existing 25 m historical-landslide buffer, study-area boundary and water layers.
+- The twelve aligned factor rasters with the original values, categorical codes, grid geometry and NoData masks.
+- Original positive representative points and the corresponding recorded sample files, with stable IDs, attributes and original row order preserved.
+- For NS3 and the hard-negative family, the matching seed's NS1 RF prediction raster, supplied directly or regenerated by reproducing that baseline.
+
+Supervised pool scorers use the 560 training positives. The 25 m exclusion mask uses all 800 historical polygons, including those later assigned to internal testing. Training-only scorer fitting therefore does not establish strict training-only spatial isolation of the candidate mask.
+
+Reconstructing the inventories and conditioning factors from their original sources additionally requires the relevant source imagery and datasets. These source materials are distinct from the processed inputs read directly by the sampling and training commands.
+
+## Private inputs required for event evaluation and resampling
+
+Recomputing strict equal-area event-ranking metrics requires:
+
+- The final prediction raster for each evaluated run.
+- The common valid-domain raster.
+- The original event representative-point table with `row`, `col` and `common_valid`, preserving event ordering.
+
+The paired event-bootstrap analysis requires the event-rank files for NS3, H100 and Q60 at seeds 42, 43 and 44. These can be regenerated from the authorized prediction rasters, evaluation mask and event table using `scripts/evaluate_rasters.py`. Original saved rank files may also be used if their event ordering is preserved.
+
+Spatial-block bootstrap additionally requires the original event IDs and projected `x,y` coordinates in EPSG:32649, the common-domain raster and the paired event-difference files produced by the event-bootstrap workflow. The published grid origin and block scales are reproducibility parameters, not substitutes for the private event coordinates.
+
+Models do not need retraining to recompute evaluation and resampling results when the corresponding final prediction rasters and other required inputs are available.
+
+## Limits of reproduction and interpretation
+
+The public package alone does not provide end-to-end exact reproduction, reconstruction of every eligible negative-candidate cell, or experiments for unrun seed configurations.
+
+Event evaluation uses a temporally held-out inventory; strict spatial or cross-event independence is not established. All 800 historical positives are retained. Of these, 125 landslides were identified for the period from December 2023 to 24 July 2024 using PlanetScope imagery acquired on 24 July 2024 as the base image.
+
+No exclusion sensitivity analysis was conducted for these 125 pre-event historical landslides or for historical polygons overlapping the post-event inventory. Robustness to historical/event inventory overlap remains untested.
+
+## Licensing and local input handling
+
+The repository code is released under the MIT License; see `LICENSE`. The code license does not establish redistribution rights for private geospatial inputs or derived records.
+
+Stage authorized private inputs under `data/` according to the configurations. Preserve original sample IDs and row order, and explicitly stage sampling outputs before model training as described in the README. Keep private inputs and generated outputs outside version control using the repository-root `.gitignore`.
