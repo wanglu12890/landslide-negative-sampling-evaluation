@@ -1,4 +1,6 @@
 {
+  "record_type": "Historical release-preparation scan",
+  "scan_applies_to": "The original release-preparation snapshot, before subsequent public repository edits.",
   "scanned_text_files": 196,
   "total_bytes": 3506457,
   "extensions": {
@@ -14,6 +16,21 @@
   "forbidden_artifacts": [],
   "raw_coordinates_features_geodata_included": false,
   "git_history_included": false,
-  "publication_status": "author license and data approval pending; not uploaded",
-  "scope": "Pattern and allowlist review; not a proof of absence of all secrets"
+  "scope": "Historical pattern and allowlist review of the recorded snapshot; not proof of absence of all secrets and not a new scan of subsequent repository edits.",
+  "current_release_status": {
+    "publication_status": "Public repository available",
+    "repository_url": "https://github.com/wanglu12890/landslide-negative-sampling-evaluation",
+    "code_license": "MIT; see LICENSE",
+    "data_rights_boundary": "The code license does not establish redistribution rights for private geospatial inputs or derived records."
+  },
+  "subsequent_functional_validation": {
+    "validated_snapshot": "The updated public download checked after restoration of the missing manifests, before subsequent documentation edits.",
+    "required_manifest_csv_files": 72,
+    "present_manifest_csv_files": 72,
+    "recorded_runs": 18,
+    "command": "python scripts/verify_release.py --self-test",
+    "status": "PASS",
+    "scope": "Manifest, configuration, source/result integrity and lightweight functional checks; not a new credential scan or end-to-end reproduction with private inputs."
+  },
+  "maintenance_note": "Preserve these historical scan measurements. A new scan of a later repository version must record its own findings and identify the scanned version."
 }
