@@ -154,7 +154,7 @@ Only aggregate experimental results and coordinate-free sampled/split IDs are in
 
 ## Limitations
 
-The event inventory is temporally held out. One region and one typhoon do not establish spatial or cross-event independence, and robustness to historical/event inventory overlap has not been tested. Occupied-block bootstrap conditions on event-bearing blocks and does not model zero-event areas; scale and origin choices are not optimality claims. H100 deficits remain negative under the reported scales; Q60 improvement depends on seed, budget and scale. Missing hard-family seeds are not synthesized. The current `LICENSE` contains MIT license terms, but its copyright year and holder remain placeholders and must be completed by the rights holder. The code license does not establish redistribution rights for private geospatial inputs or derived records.
+The event inventory is temporally held out. One region and one typhoon do not establish spatial or cross-event independence, and robustness to historical/event inventory overlap has not been tested. Occupied-block bootstrap conditions on event-bearing blocks and does not model zero-event areas; scale and origin choices are not optimality claims. H100 deficits remain negative under the reported scales; Q60 improvement depends on seed, budget and scale. Missing hard-family seeds are not synthesized. The repository code is released under the MIT License; see LICENSE. The code license does not establish redistribution rights for private geospatial inputs or derived records.
 
 ## Citation
 
